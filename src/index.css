@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Design Tokens — "Roster"
+   A light, precise People-Ops console aesthetic (Attio / Linear / Notion
+   People style): near-white surfaces, hairline borders, a single confident
+   teal accent, and generous whitespace instead of decoration.
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-surface-sunken: #fafbfc;
+  --color-border: #e7e9ee;
+  --color-border-strong: #d7dbe3;
+
+  --color-text-primary: #14171f;
+  --color-text-secondary: #5b616e;
+  --color-text-muted: #9aa0ac;
+  --color-text-inverse: #ffffff;
+
+  --color-accent: #0f766e;
+  --color-accent-strong: #0b5c56;
+  --color-accent-soft: #e3f4f2;
+  --color-accent-soft-border: #bfe6e2;
+
+  --color-admin-bg: #fff4e0;
+  --color-admin-text: #9a5b00;
+  --color-admin-border: #f6dfae;
+
+  --color-danger: #d1453d;
+
+  --color-skill-bg: #f1f2f5;
+  --color-skill-text: #464c58;
+  --color-skill-border: #e3e5eb;
+
+  /* Avatar palette — deterministic per-name assignment */
+  --avatar-1-bg: #e3f4f2; --avatar-1-fg: #0b5c56;
+  --avatar-2-bg: #eef0fd; --avatar-2-fg: #4338ca;
+  --avatar-3-bg: #fdeee8; --avatar-3-fg: #c2410c;
+  --avatar-4-bg: #fdf0f6; --avatar-4-fg: #a6367d;
+  --avatar-5-bg: #eef8ec; --avatar-5-fg: #3f7d31;
+  --avatar-6-bg: #eef6fd; --avatar-6-fg: #1c64a3;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Shadow */
+  --shadow-xs: 0 1px 2px rgba(20, 23, 31, 0.04);
+  --shadow-sm: 0 1px 3px rgba(20, 23, 31, 0.06), 0 1px 2px rgba(20, 23, 31, 0.04);
+  --shadow-md: 0 4px 16px rgba(20, 23, 31, 0.08);
+  --shadow-lg: 0 16px 48px rgba(20, 23, 31, 0.16);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+::selection {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
