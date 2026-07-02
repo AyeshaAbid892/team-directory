@@ -1,0 +1,77 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f1626" />
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0" />
+      <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="dotGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bgGrad)" />
+  <rect width="1200" height="320" fill="url(#dotGrid)" />
+  <rect width="1200" height="320" fill="url(#glow)" />
+
+  <!-- Logo mark -->
+  <rect x="80" y="86" width="56" height="56" rx="14" fill="#14b8a6" />
+  <text x="108" y="123" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#06251f" text-anchor="middle">R</text>
+
+  <!-- Wordmark -->
+  <text x="156" y="120" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#f4f6fa" letter-spacing="-0.5">Roster</text>
+  <text x="158" y="146" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8b93a7" letter-spacing="0.3">Team directory, built for real organizations</text>
+
+  <!-- Divider accent line -->
+  <rect x="80" y="182" width="360" height="2" fill="url(#accentLine)" />
+
+  <!-- Feature pills -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="80" y="208" width="94" height="30" rx="15" fill="#141b2c" stroke="#233047" stroke-width="1" />
+    <text x="127" y="228" fill="#c4cbdb" text-anchor="middle">React 18</text>
+
+    <rect x="186" y="208" width="70" height="30" rx="15" fill="#141b2c" stroke="#233047" stroke-width="1" />
+    <text x="221" y="228" fill="#c4cbdb" text-anchor="middle">Vite</text>
+
+    <rect x="268" y="208" width="122" height="30" rx="15" fill="#141b2c" stroke="#233047" stroke-width="1" />
+    <text x="329" y="228" fill="#c4cbdb" text-anchor="middle">CSV export</text>
+
+    <rect x="402" y="208" width="128" height="30" rx="15" fill="#141b2c" stroke="#233047" stroke-width="1" />
+    <text x="466" y="228" fill="#c4cbdb" text-anchor="middle">Fully interactive</text>
+  </g>
+
+  <!-- Abstract network graphic: people/nodes connected -->
+  <g stroke="#2a3a52" stroke-width="1.4" fill="none" opacity="0.9">
+    <line x1="760" y1="150" x2="880" y2="90" />
+    <line x1="760" y1="150" x2="860" y2="210" />
+    <line x1="880" y1="90" x2="1010" y2="120" />
+    <line x1="880" y1="90" x2="980" y2="60" />
+    <line x1="860" y1="210" x2="1000" y2="240" />
+    <line x1="860" y1="210" x2="960" y2="200" />
+    <line x1="1010" y1="120" x2="1120" y2="150" />
+    <line x1="960" y1="200" x2="1120" y2="150" />
+    <line x1="760" y1="150" x2="1120" y2="150" stroke-dasharray="2 5" opacity="0.5" />
+  </g>
+
+  <g>
+    <circle cx="760" cy="150" r="10" fill="#0f1626" stroke="#2dd4bf" stroke-width="2" />
+    <circle cx="880" cy="90" r="7" fill="#eef0fd" opacity="0.9" />
+    <circle cx="980" cy="60" r="6" fill="#fdeee8" opacity="0.85" />
+    <circle cx="1010" cy="120" r="8" fill="#0f1626" stroke="#4338ca" stroke-width="2" />
+    <circle cx="860" cy="210" r="9" fill="#0f1626" stroke="#f59e0b" stroke-width="2" />
+    <circle cx="960" cy="200" r="6" fill="#eef8ec" opacity="0.9" />
+    <circle cx="1000" cy="240" r="7" fill="#fdf0f6" opacity="0.85" />
+    <circle cx="1120" cy="150" r="11" fill="#0f1626" stroke="#2dd4bf" stroke-width="2.4" />
+  </g>
+
+  <!-- Bottom hairline -->
+  <rect x="0" y="318" width="1200" height="2" fill="#182136" />
+</svg>
